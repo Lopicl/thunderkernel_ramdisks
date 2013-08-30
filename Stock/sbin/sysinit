@@ -1,0 +1,17 @@
+#!/system/bin/sh
+
+# ThunderKernel init.d start script
+# Created by Lopicl.00 @ XDA-Developers for ThunderKernel
+
+BUSYBOX=/sbin/busybox
+INITD=/system/etc/init.d
+
+if $BUSYBOX ! test $INITD
+then
+$BUSYBOX mkdir $INITD
+$BUSYBOX chmod -R 777 $INITD
+else
+$BUSYBOX chmod -R 777 $INITD
+fi
+
+/system/bin/logwrapper $BUSYBOX run-parts $INITD
