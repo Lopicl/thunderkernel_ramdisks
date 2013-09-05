@@ -30,8 +30,8 @@ on fs
     mount tmpfs tmpfs /tmp
     chmod 0755 /sbin/ext4-fix.sh
     start ext4-fix
-on post-fs
 
+on post-fs
     write /proc/sys/kernel/panic_on_oops 1
     write /proc/sys/kernel/hung_task_timeout_secs 0
     write /proc/cpu/alignment 4
@@ -40,8 +40,8 @@ on post-fs
     write /proc/sys/kernel/sched_compat_yield 1
     write /proc/sys/kernel/sched_child_runs_first 0
     write /proc/LinuStoreIII/fsbuild_check BUILDING
-on boot
 
+on boot
     ifup lo
     hostname localhost
     domainname localdomain
