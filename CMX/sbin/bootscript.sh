@@ -15,7 +15,6 @@
 /sbin/insmod /system/lib/modules/ge_drv.ko   
 /sbin/insmod /system/lib/modules/brcm_switch.ko
 /sbin/insmod /system/lib/modules/bcm_switch.ko
-/sbin/insmod /system/lib/modules/frandom-sup.ko
 
 
 /sbin/busybox chmod 755 /sbin

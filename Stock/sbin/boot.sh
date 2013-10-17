@@ -22,7 +22,6 @@
 /sbin/busybox insmod /system/lib/modules/ge_drv.ko   
 /sbin/busybox insmod /system/lib/modules/brcm_switch.ko
 /sbin/busybox insmod /system/lib/modules/bcm_switch.ko
-/sbin/busybox insmod /system/lib/modules/frandom-sup.ko
 
 # su binary install
 if
