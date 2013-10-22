@@ -31,6 +31,10 @@ on fs
     chmod 0755 /sbin/ext4-fix.sh
     start ext4-fix
 
+    # mount /cache
+    mount rfs /dev/stl10 /cache nosuid nodev
+    mount ext4 /dev/stl10 /cache wait nosuid nodev
+
 on post-fs
     write /proc/sys/kernel/panic_on_oops 1
     write /proc/sys/kernel/hung_task_timeout_secs 0

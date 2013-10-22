@@ -12,16 +12,16 @@
 /sbin/busybox mount -o remount,rw /dev/block/stl9 /system;
 
 # modules
-/sbin/busybox insmod /system/lib/modules/bcm_headsetsw.ko
-/sbin/busybox insmod /system/lib/modules/brcm_headsetsw.ko
-/sbin/busybox insmod /system/lib/modules/brcm-headsetsw.ko
-/sbin/busybox insmod /system/lib/modules/memalloc.ko
-/sbin/busybox insmod /system/lib/modules/hx170dec.ko
-/sbin/busybox insmod /system/lib/modules/h6270enc.ko
-/sbin/busybox insmod /system/lib/modules/gememalloc.ko    
-/sbin/busybox insmod /system/lib/modules/ge_drv.ko   
-/sbin/busybox insmod /system/lib/modules/brcm_switch.ko
-/sbin/busybox insmod /system/lib/modules/bcm_switch.ko
+/sbin/insmod /system/lib/modules/bcm_headsetsw.ko
+/sbin/insmod /system/lib/modules/brcm_headsetsw.ko
+/sbin/insmod /system/lib/modules/brcm-headsetsw.ko
+/sbin/insmod /system/lib/modules/memalloc.ko
+/sbin/insmod /system/lib/modules/hx170dec.ko
+/sbin/insmod /system/lib/modules/h6270enc.ko
+/sbin/insmod /system/lib/modules/gememalloc.ko    
+/sbin/insmod /system/lib/modules/ge_drv.ko   
+/sbin/insmod /system/lib/modules/brcm_switch.ko
+/sbin/insmod /system/lib/modules/bcm_switch.ko
 
 # su binary install
 if

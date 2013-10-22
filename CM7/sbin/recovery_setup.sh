@@ -1,7 +1,6 @@
 #!/sbin/busybox sh
 
 /sbin/busybox chmod -R 755 /sbin
-/sbin/busybox chmod 755 /res/recovery.fstab
 
 # make some folder
 /sbin/busybox mkdir /etc
@@ -200,6 +199,6 @@
 /sbin/busybox rm /cache/update.zip
 /sbin/busybox touch /tmp/.ignorebootmessage
 
-setprop recovery.ready 1
+setprop recovery.ready 1 
 
 exit 1

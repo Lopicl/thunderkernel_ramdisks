@@ -1,16 +1,6 @@
 #!/sbin/busybox sh
 
-/sbin/busybox chmod 755 /sbin
-/sbin/busybox chmod 755 /res/recovery.fstab
-/sbin/busybox chmod 755 /sbin/recovery
-/sbin/busybox chmod 755 /sbin/e2fsck
-/sbin/busybox chmod 755 /sbin/fix_permissions
-/sbin/busybox chmod 755 /sbin/killrecovery.sh
-/sbin/busybox chmod 755 /sbin/nandroid-md5.sh
-/sbin/busybox chmod 755 /sbin/parted
-/sbin/busybox chmod 755 /sbin/sdparted
-/sbin/busybox chmod 755 /sbin/tune2fs
-/sbin/busybox chmod 755 /sbin/bmlunlock
+/sbin/busybox chmod -R 755 /sbin
 
 # make some folder
 /sbin/busybox mkdir /etc
