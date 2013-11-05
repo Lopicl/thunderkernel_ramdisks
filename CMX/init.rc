@@ -462,11 +462,11 @@ on boot
 # Note that the driver only supports 6 slots, so we have combined some of
 # the classes into the same memory level; the associated processes of higher
 # classes will still be killed first.
-# Imposto i permessi per modificare adj e minfree,non so dove devo metterli,li aggiungo come commenti qui:
-# chown root system /sys/module/lowmemorykiller/parameters/adj
-# chmod 0664 /sys/module/lowmemorykiller/parameters/adj
-# chown root system /sys/module/lowmemorykiller/parameters/minfree
-# chmod 0664 /sys/module/lowmemorykiller/parameters/minfree
+
+    chown root system /sys/module/lowmemorykiller/parameters/adj
+    chmod 0775 /sys/module/lowmemorykiller/parameters/adj
+    chown root system /sys/module/lowmemorykiller/parameters/minfree
+    chmod 0775 /sys/module/lowmemorykiller/parameters/minfree
     write /sys/module/lowmemorykiller/parameters/adj 0,1,2,4,7,15
 
     write /proc/sys/vm/overcommit_memory 1
