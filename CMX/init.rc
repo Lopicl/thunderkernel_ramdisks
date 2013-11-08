@@ -469,6 +469,11 @@ on boot
     chmod 0775 /sys/module/lowmemorykiller/parameters/minfree
     write /sys/module/lowmemorykiller/parameters/adj 0,1,2,4,7,15
 
+    chown root system /sys/block/mmcblk0/queue/scheduler
+    chmod 0775 /sys/block/mmcblk0/queue/scheduler
+    chown root system /sys/devices/virtual/bdi/179:0/read_ahead_kb
+    chmod 0775 /sys/devices/virtual/bdi/179:0/read_ahead_kb
+
     write /proc/sys/vm/overcommit_memory 1
     write /proc/sys/vm/min_free_order_shift 4
 	#write /sys/module/lowmemorykiller/parameters/minfree 1536,2048,4096,5120,5632,6144
