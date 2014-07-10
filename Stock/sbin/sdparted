@@ -1,4 +1,4 @@
-#!/system/bin/sh
+#!/sbin/sh
 
 # do logging, if not excluded with -x
 LOGFILE="/data/sdparted.log"

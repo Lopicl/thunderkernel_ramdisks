@@ -6,8 +6,6 @@ touch /tmp/.ignorebootmessage
 kill $(ps | grep /sbin/adbd)
 kill $(ps | grep /sbin/recovery)
 
-/sbin/recovery &
-
 # On the Galaxy S, the recovery comes test signed, but the
 # recovery is not automatically restarted.
 if [ -f /init.smdkc110.rc ]
