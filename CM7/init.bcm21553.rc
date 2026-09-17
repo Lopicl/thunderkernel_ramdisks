@@ -125,7 +125,7 @@ on boot
     chown system bluetooth /data/local.prop
 
     setprop ro.bt.bdaddr_path "/data/misc/bluetooth/.nvmac_bt.info"
-    chmod 0660 ro.bt.bdaddr_path
+    chmod 0660 /data/misc/bluetooth/.nvmac_bt.info
 
 # GPS
     chown gps system /dev/ttyS2
